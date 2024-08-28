@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="channels4_profile.jpg" type="image/x-icon">
+    <title>Formulario</title>
+</head>
+<style>
+    body{background: linear-gradient(to left,white,black,red);text-align: center;}
+    h1{color: white;font-size: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;}
+    h2{color: blueviolet;font-size: 20px;font-style: italic;font-family: Arial, Helvetica, sans-serif;}
+    p{color: white;font-size: 15px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-style: inherit;}
+    fieldset{background-color: aquamarine;padding: 5px;border-radius: 10px 10px;border: 5px solid red;box-shadow: 10px 10px 10px black;width: 300px;margin: auto;}
+    label{display: flex;flex-direction: column;padding: 5px;font-size: 20px;color: white;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    input{width: 300px;border: 4px solid red;border-radius: 10px 10px;text-align: left;color: rgb(0, 0, 0);font-size: 15px;}
+    select{background-color: black;color: yellow;width: 100px;border-radius: 10px 10px;border: 4px solid white;}
+    textarea{background-color: bisque;border: 6px solid white;border-radius: 10px 10px;width: 300px;height: 200px;}
+    button{border-radius: 10px 10px;background-color: aqua;color: red;box-shadow: 5px 5px 5px black;}
+    .color{background-color: blue;margin: auto;width: 100px;border-radius: 10px 10px;box-shadow: 6px 6px 6px rgb(255, 0, 0);display: flex;flex-direction: column;padding: 5px;align-items: center;justify-content: center;}
+    .color1{background-color: black;width: 100px;margin: auto;border-radius: 10px 10px;box-shadow: 6px 6px 6px yellow;padding: 5px;display: flex;flex-direction: column;align-items: center;justify-content: center;}
+    summary{margin: auto;width: 300px;border-radius: 10px 10px;}
+</style>
+<body>
+    <div id="text"><details><summary style="background-color: black;box-shadow: 6px 6px 6px yellow;border: 6px solid white;color: white;">Cadastro de <b style="color: red;">Brasileiros</b></summary>
+    <form>
+        <h1><big>Cadastro de <b style="color: red;">Brasileiros</b></big></h1>
+        <br>
+        <fieldset>
+            <label for="Nome"> <b style="color: black;">Nome</b></label>
+            <input type="text" id="Nome" name="Nome" required>
+            <label for="Idade"> <b style="color: black;">Idade</b></label>
+            <input type="number" id="Idade" name="Idade" required>
+            <label for="CPF"> <b style="color: black;">CPF</b></label>
+            <input type="number" id="CPF" name="CPF" required>
+            <label for="RG"> <b style="color: black;">RG</b></label>
+            <input type="number" name="RG" id="RG" required>
+            <label for="E-mail"><b style="color: black;">E-mail</b></label>
+            <input type="email" name="E-mail" id="E-mail" required>
+            <br>
+            <br>
+            <label for="Estado civil"><b style="color: black;">Estado civil</b></label>
+            <br>
+            <div class="color">
+            <label for="Solteiro">Solteiro</label>
+            <input type="radio" value="Solteiro" name="Estado civil" required>
+            <label for="Casado">Casado</label>
+            <input type="radio" value="Casado" name="Estado civil" required>
+            <label for="Divorciado">Divorciado</label>
+            <input type="radio" value="Divorciado" name="Estado civil" required>
+            </div>
+            <br>
+            <br>
+            <label for="Experiência">Qual a sua <b style="color: red;">Experiência</b></label>
+            <br>
+            <div class="color1">
+            <label for="Aprendiz">Aprendiz</label>
+            <input type="radio" value="Aprendiz" name="Experiência" required>
+            <label for="Novato">Novato</label>
+            <input type="radio" value="Novato" name="Experiência" required>
+            <label for="Iniciante">Iniciante</label>
+            <input type="radio" value="Iniciante" name="Experiência" required>
+            <label for="Mediano">Mediano</label>
+            <input type="radio" value="Mediano" name="Experiência" required>
+            <label for="Veterano">Veterano</label>
+            <input type="radio" value="Veterano" name="Experiência" required>
+            <label for="Experiente">Experiente</label>
+            <input type="radio" value="Experiente" name="Experiência" required>
+            <label for="Expert">Expert</label>
+            <input type="radio" value="Expert" name="Experiência" required>
+            </div>
+            <br>
+            <br>
+            <label for="Signo">Qual o seu <b style="color: red;">Signo</b></label>
+            <select name="Signo" id="Signo" required>
+            <option value="" selected disabled>Selecione</option>
+            <option value="Libra">Libra</option>
+            <option value="Gêmeos">Gêmeos</option>
+            <option value="Capricornio">Capricornio</option>
+            <option value="Áries">Áries</option>
+            <option value="Sagitário">Sagitário</option>
+            <option value="Leão">Leão</option>
+            <option value="Escorpião">Escorpião</option>
+            <option value="Ofiúco">Ofiúco</option>
+            <option value="Aquario">Aquario</option>
+            <option value="Peixes">Peixes</option>
+            <option value="Touro">Touro</option>
+            <option value="Cancêr">Cancêr</option>
+            <option value="Virgem">Virgem</option>
+            </select>
+            <br>
+            <br>
+            <label>Me fale sobre <b style="color: red;">Você</b></label>
+            <br>
+            <textarea name="Você" id="Você" required rows="6"></textarea>
+            <br>
+            <button>Confirme</button>
+        </fieldset>
+        <br>
+        <p>Retorne para minha <a href="index.html" target="_blank" rel="external" style="color: red;background-color: aqua;border-radius: 10px 10px;">1ªPágina</a></p>
+        <br>
+    </form>    
+    </details></div>
+    <script src="script.js"></script>
+    <script>showAlert("Welcome my formulary")</script>
+</body>
+</html>
